@@ -1,2 +1,4 @@
-# correlation-visualization
-Framework for visualizing the relationship of two variables.
+# ml-predction-correlation-visualization
+Framework for training models and visualizing the relationship between variables. 
+
+I often find it challenging to know the utility of a trained model. That is, how useful are the trained model's predictions compared to predictor variables in the dataset? This framework provides a simple machine learning model training workflow, a way to explore the impact of covariates on training, correlation analyses, and a visualization tool. Correlations between the predictor variables and the target variable and between the trained model's predictions and the target variable can be produced and visualized. One of the goals is that the correlations of the predictor variables and the target variable can serve as a benchmark for the performance of the trained models.
