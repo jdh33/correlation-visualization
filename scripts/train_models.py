@@ -6,7 +6,7 @@ import pandas as pd
 from sklearn.utils import shuffle
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler, minmax_scale
 from sklearn.model_selection import train_test_split, KFold, GridSearchCV
 from sklearn.linear_model import SGDRegressor 
 from sklearn.ensemble import RandomForestRegressor
@@ -27,7 +27,7 @@ def main():
     training_dataset = args.training_dataset
     target_variable = args.target_variable
     variables_to_drop = args.variables_to_drop.split(',')
-    selected_models = args.selected_models.split(',')
+    # selected_models = args.selected_models.split(',')
     train_with_covar = args.train_with_covar
     train_with_shuffled_data = args.train_with_shuffled_data
     output_suffix = args.output_suffix
@@ -36,13 +36,13 @@ def main():
 
     if not variables_to_drop[0].strip():
         variables_to_drop = []
-    if not selected_models[0].strip():
-        selected_models = ['rfr']
+    # if not selected_models[0].strip():
+    #     selected_models = ['rfr']
     output_dir = training_dataset
     if output_suffix.strip():
         output_dir = f'{output_dir}_{output_suffix}'
     if timestamp:
-        run_datetime = datetime.datetime.now().strftime('%Y%m%d')
+        run_datetime = datetime.datetime.now().strftime('%Y%m%d_%H%M')
         output_dir = f'{output_dir}_{run_datetime}'
 
     dataset_config = dataset_config_options[training_dataset]
@@ -65,6 +65,7 @@ def main():
     variables_to_drop.append(target_variable)
     y = df[target_variable]
     X = df.drop(variables_to_drop, axis=1)
+    # Use when creating table of feature importances
     # Make sure there will be no duplicate column names if 
     # excluding a prefix
     X_train, X_test, y_train, y_test = train_test_split(
@@ -124,16 +125,15 @@ def main():
     rf_regressor_cv = GridSearchCV(
         estimator=rf_regressor_pipeline, param_grid=rf_regressor_param_grid,
         cv=cv, refit=True, scoring=r2_scorer, n_jobs=n_jobs, verbose=VERBOSE)
-    
-    possible_models = {
+    models_to_train = {
         'rr': ('Ridge regression', sgd_ridge_regressor_cv),
         'rfr': ('Random forest regression', rf_regressor_cv)
         }
-    models_to_train = {m: possible_models[m] for m in selected_models}
+    
     all_cv_results = pd.DataFrame()
     test_result_columns = [
         'model_key', 'model_name', 'training_x',
-        'r2_score', 'shuffled_r2_score'
+        'r2_score', 'shuffled_r2_score', 'best_hyperparameters'
         ]
     all_test_results = pd.DataFrame(columns=test_result_columns)
     for model_cv_key in models_to_train:
@@ -153,7 +153,11 @@ def main():
             cv_results.insert(1, 'model_name', model_cv_name)
             cv_results.insert(2, 'training_x', Xy_key)
             all_cv_results = pd.concat(
-                [all_cv_results, cv_results.iloc[0:10]], ignore_index=True)
+                [
+                    all_cv_results,
+                    cv_results.sort_values(by=['rank_test_score']).iloc[0:10]
+                    ],
+                sort=True, ignore_index=True)
             # Test on unseen data
             y_test_predictions = model_cv.predict(X_test_i)
             y_test_predictions = pd.DataFrame(
@@ -174,17 +178,41 @@ def main():
                     shuffled_y_test_predictions['prediction'])
             test_results = [
                 model_cv_key, model_cv_name, Xy_key,
-                test_score, shuffled_test_score
+                test_score, shuffled_test_score, str(model_cv.best_params_)
                 ]
             test_results = pd.DataFrame(
                 index=[0], data=dict(zip(test_result_columns, test_results)))
             all_test_results = pd.concat(
                 [all_test_results, test_results], ignore_index=True)
+            feature_importances = {}
+            if model_cv_key in ['rr']:
+                feature_importances['coefficient'] = (
+                    model_cv.best_estimator_.named_steps['regressor'].coef_
+                    .flatten().tolist())
+                feature_importances['normalized_abs_importance'] = (
+                    minmax_scale(
+                        [abs(i) for i in feature_importances['coefficient']]))
+            elif model_cv_key in ['rfr']:
+                feature_importances['importance'] = (
+                    model_cv.best_estimator_.named_steps['regressor']
+                    .feature_importances_.tolist())
+                feature_importances['normalized_abs_importance'] = (
+                    minmax_scale(
+                        [abs(i) for i in feature_importances['importance']]))
+            feature_importances = pd.DataFrame(data=feature_importances)
+            feature_importances.insert(0, 'model_key', model_cv_key)
+            feature_importances.insert(1, 'model_name', model_cv_name)
+            feature_importances.insert(2, 'training_x', Xy_key)
+            feature_importances.insert(
+                3, 'feature', model_cv.feature_names_in_.tolist())
+            
             dump(
                 model_results_dir,
                 os.path.join(model_results_dir, 'model.joblib'))
             y_test_predictions.to_csv(
                 os.path.join(model_results_dir, 'y_test_predictions.csv'))
+            feature_importances.to_csv(
+                os.path.join(model_results_dir, 'feature_importances.csv'))
 
     all_cv_results.to_csv(os.path.join(results_dir, 'cv_results.csv'))
     all_test_results.to_csv(os.path.join(results_dir, 'test_results.csv'))
