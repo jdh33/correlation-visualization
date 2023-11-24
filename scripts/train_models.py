@@ -1,6 +1,7 @@
 import sys
 import os
 import datetime
+import json
 import numpy as np
 import pandas as pd
 from sklearn.utils import shuffle
@@ -13,14 +14,8 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import make_scorer, r2_score
 from joblib import dump
 
-project_dir = os.path.abspath(os.getcwd())
-sys.path.append(os.path.join(project_dir, 'utilities'))
-sys.path.append(os.path.join(project_dir, 'config'))
+sys.path.append('utilities')
 import utilities as utils
-import datasets_config_file
-import ml_config_file
-dataset_config_options = datasets_config_file.datasets
-ml_config_options = ml_config_file.ml
 
 def main():
     args = utils.get_model_training_args()
@@ -44,8 +39,16 @@ def main():
     if timestamp:
         run_datetime = datetime.datetime.now().strftime('%Y%m%d_%H%M')
         output_dir = f'{output_dir}_{run_datetime}'
-
+    
+    project_dir = os.path.abspath(os.getcwd())
+    dataset_config_path = os.path.join(
+        project_dir, 'config', 'dataset_config.json')
+    with open (dataset_config_path) as json_config:
+        dataset_config_options = json.load(json_config)
     dataset_config = dataset_config_options[training_dataset]
+    ml_config_path = os.path.join(project_dir, 'config', 'ml_config.json')
+    with open (ml_config_path) as json_config:
+        ml_config_options = json.load(json_config)
     ml_config = ml_config_options['grid_search_cv']
 
     TRAIN_TEST_SPLIT_RANDOM_STATE = 0
