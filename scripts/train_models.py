@@ -12,6 +12,7 @@ from sklearn.model_selection import train_test_split, KFold, GridSearchCV
 from sklearn.linear_model import SGDRegressor 
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import make_scorer, r2_score
+from sklearn.inspection import permutation_importance
 from joblib import dump
 
 sys.path.append('utilities')
@@ -42,7 +43,7 @@ def main():
     
     project_dir = os.path.abspath(os.getcwd())
     dataset_config_path = os.path.join(
-        project_dir, 'config', 'dataset_config.json')
+        project_dir, 'config', 'datasets_config.json')
     with open (dataset_config_path) as json_config:
         dataset_config_options = json.load(json_config)
     dataset_config = dataset_config_options[training_dataset]
@@ -54,11 +55,11 @@ def main():
     TRAIN_TEST_SPLIT_RANDOM_STATE = 0
     CV_RANDOM_STATE = 21
     MODEL_RANDOM_STATE = 42
+    FEATURE_PERMUTATION_TEST_N = 10
     VERBOSE = 1
 
-    home_dir = os.path.expanduser('~')
     input_dir = os.path.join(
-        home_dir, dataset_config['io_dir'].replace('/', os.sep), 'input')
+        dataset_config['io_dir'].replace('/', os.sep), 'input')
     results_dir = os.path.join(project_dir, 'results', output_dir)
     if not os.path.exists(results_dir):
         os.makedirs(results_dir)
@@ -168,6 +169,7 @@ def main():
             test_score = r2_score(
                 y_test_predictions['true'], y_test_predictions['prediction'])
             shuffled_test_score = np.nan
+            # Do a couple more tests with the 'standard' X matrix
             if Xy_key == 'X':
                 shuffled_y_test_predictions = model_cv.predict(
                     shuffle(X_test_i).reset_index(drop=True))
@@ -179,6 +181,31 @@ def main():
                 shuffled_test_score = r2_score(
                     shuffled_y_test_predictions['true'],
                     shuffled_y_test_predictions['prediction'])
+                permutation_results = permutation_importance(
+                    model_cv, X_test_i, y_test_i,
+                    n_repeats=FEATURE_PERMUTATION_TEST_N,
+                    random_state=MODEL_RANDOM_STATE, n_jobs=n_jobs)
+                permutation_feature_importances = {}
+                for k, v in permutation_results.items():
+                    # Importances is an array of arrays
+                    # Each subarray contains importance values for each
+                    # perumattion test; we don't need all those values
+                    if k != 'importances':
+                        v = list(v)
+                        permutation_feature_importances[k] = v
+                permutation_feature_importances = pd.DataFrame(
+                    data=permutation_feature_importances)
+                permutation_feature_importances.insert(
+                    0, 'model_key', model_cv_key)
+                permutation_feature_importances.insert(
+                    1, 'model_name', model_cv_name)
+                permutation_feature_importances.insert(
+                    2, 'training_x', Xy_key)
+                permutation_feature_importances.insert(
+                    3, 'feature', model_cv.feature_names_in_.tolist())
+                permutation_feature_importances.to_csv(
+                    os.path.join(model_results_dir,
+                                 'permutation_feature_importances.csv'))
             test_results = [
                 model_cv_key, model_cv_name, Xy_key,
                 test_score, shuffled_test_score, str(model_cv.best_params_)

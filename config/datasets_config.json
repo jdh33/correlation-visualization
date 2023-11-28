@@ -1,6 +1,8 @@
 {
-    "who_life_expectancy": {
-        "io_dir": "Development/ml-prediction-correlation-visualization/data/who_life_expectancy",
+    "life-expectancy-who": {
+        "url": "https://www.kaggle.com/datasets/kumarajarshi/life-expectancy-who",
+        "kaggle_identifier": "kumarajarshi/life-expectancy-who",
+        "io_dir": "c:/Users/Jonah/Development/ml-prediction-correlation-visualization/data/life-expectancy-who",
         "source_data_filename": "Life Expectancy Data.csv"
     }
 }
