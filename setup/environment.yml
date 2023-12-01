@@ -15,3 +15,4 @@ dependencies:
 - conda-forge::pyarrow=6.0.1
 - conda-forge::kaggle=1.5.16
 - conda-forge::pygwalker=0.2.1
+- conda-forge::statsmodels=0.13.5
