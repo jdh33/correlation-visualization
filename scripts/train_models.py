@@ -185,27 +185,34 @@ def main():
                     model_cv, X_test_i, y_test_i,
                     n_repeats=FEATURE_PERMUTATION_TEST_N,
                     random_state=MODEL_RANDOM_STATE, n_jobs=n_jobs)
-                permutation_feature_importances = {}
+                permutation_importances = {}
                 for k, v in permutation_results.items():
                     # Importances is an array of arrays
                     # Each subarray contains importance values for each
                     # perumattion test; we don't need all those values
                     if k != 'importances':
                         v = list(v)
-                        permutation_feature_importances[k] = v
-                permutation_feature_importances = pd.DataFrame(
-                    data=permutation_feature_importances)
-                permutation_feature_importances.insert(
+                        permutation_importances[k] = v
+                permutation_importances = pd.DataFrame(
+                    data=permutation_importances)
+                permutation_importances['normalized_importance'] = (
+                    minmax_scale(permutation_importances['importances_mean']))
+                permutation_importances['rank_importance'] = (
+                    permutation_importances['normalized_importance'].rank(
+                        ascending=False))
+                permutation_importances.insert(
                     0, 'model_key', model_cv_key)
-                permutation_feature_importances.insert(
+                permutation_importances.insert(
                     1, 'model_name', model_cv_name)
-                permutation_feature_importances.insert(
+                permutation_importances.insert(
                     2, 'training_x', Xy_key)
-                permutation_feature_importances.insert(
+                permutation_importances.insert(
                     3, 'feature', model_cv.feature_names_in_.tolist())
-                permutation_feature_importances.to_csv(
+                permutation_importances = permutation_importances.sort_values(
+                    by=['rank_importance'])
+                permutation_importances.to_csv(
                     os.path.join(model_results_dir,
-                                 'permutation_feature_importances.csv'))
+                                 'permutation_importances.csv'))
             test_results = [
                 model_cv_key, model_cv_name, Xy_key,
                 test_score, shuffled_test_score, str(model_cv.best_params_)
@@ -219,22 +226,29 @@ def main():
                 feature_importances['coefficient'] = (
                     model_cv.best_estimator_.named_steps['regressor'].coef_
                     .flatten().tolist())
-                feature_importances['normalized_abs_importance'] = (
+                # The magnitude of the coefficient determines its
+                # relative importance, not its sign, so we want the
+                # absolute coefficients
+                feature_importances['normalized_importance'] = (
                     minmax_scale(
                         [abs(i) for i in feature_importances['coefficient']]))
             elif model_cv_key in ['rfr']:
                 feature_importances['importance'] = (
                     model_cv.best_estimator_.named_steps['regressor']
                     .feature_importances_.tolist())
-                feature_importances['normalized_abs_importance'] = (
-                    minmax_scale(
-                        [abs(i) for i in feature_importances['importance']]))
+                feature_importances['normalized_importance'] = minmax_scale(
+                    feature_importances['importance'])
             feature_importances = pd.DataFrame(data=feature_importances)
+            feature_importances['rank_importance'] = (
+                feature_importances['normalized_importance'].rank(
+                    ascending=False))
             feature_importances.insert(0, 'model_key', model_cv_key)
             feature_importances.insert(1, 'model_name', model_cv_name)
             feature_importances.insert(2, 'training_x', Xy_key)
             feature_importances.insert(
                 3, 'feature', model_cv.feature_names_in_.tolist())
+            feature_importances = feature_importances.sort_values(
+                by=['rank_importance'])
             
             dump(
                 model_results_dir,
