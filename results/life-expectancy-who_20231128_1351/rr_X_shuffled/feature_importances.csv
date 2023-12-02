@@ -1,0 +1,19 @@
+,model_key,model_name,training_x,feature,coefficient,normalized_importance,rank_importance
+3,rr,Ridge regression,X_shuffled,percentage expenditure,-0.037905274792641955,0.9999999999999999,1.0
+5,rr,Ridge regression,X_shuffled,Measles,-0.03028500671778308,0.7844232821198159,2.0
+12,rr,Ridge regression,X_shuffled,GDP,-0.030102984683572087,0.7792738946794263,3.0
+9,rr,Ridge regression,X_shuffled,Total expenditure,-0.02855944588810789,0.7356073170501259,4.0
+2,rr,Ridge regression,X_shuffled,Alcohol,-0.022525417189543328,0.5649051724991974,5.0
+17,rr,Ridge regression,X_shuffled,Schooling,0.02182093891140043,0.5449755435769574,6.0
+10,rr,Ridge regression,X_shuffled,Diphtheria,-0.017517097912546097,0.42322025784465434,7.0
+4,rr,Ridge regression,X_shuffled,Hepatitis B,-0.016632503132372734,0.3981951488208819,8.0
+1,rr,Ridge regression,X_shuffled,infant deaths,-0.014508722909691988,0.3381135919246253,9.0
+7,rr,Ridge regression,X_shuffled,under-five deaths,-0.012680525675294856,0.28639405193504797,10.0
+0,rr,Ridge regression,X_shuffled,Adult Mortality,0.011623957866647893,0.2565038409649846,11.0
+16,rr,Ridge regression,X_shuffled,Income composition of resources,0.010599126400773243,0.22751144835841783,12.0
+6,rr,Ridge regression,X_shuffled,BMI,-0.010224129547709447,0.21690282015731774,13.0
+8,rr,Ridge regression,X_shuffled,Polio,-0.00922225827657157,0.1885599694532956,14.0
+13,rr,Ridge regression,X_shuffled,Population,0.004815470823484814,0.06389233752754975,15.0
+15,rr,Ridge regression,X_shuffled,thinness 5-9 years,0.004115950258053041,0.044102961864638454,16.0
+11,rr,Ridge regression,X_shuffled,HIV/AIDS,0.002636238358729711,0.0022420415491436058,17.0
+14,rr,Ridge regression,X_shuffled,thinness  1-19 years,0.002556986026625175,0.0,18.0

@@ -1,0 +1,205 @@
+,model_key,model_name,training_x,feature,importance,normalized_importance,rank_importance
+11,rfr,Random forest regression,X_with_covar,HIV/AIDS,0.3761751768360336,1.0,1.0
+0,rfr,Random forest regression,X_with_covar,Adult Mortality,0.21520381958826273,0.57208328626577,2.0
+16,rfr,Random forest regression,X_with_covar,Income composition of resources,0.20524630951897566,0.545612831778229,3.0
+17,rfr,Random forest regression,X_with_covar,Schooling,0.053656436607171336,0.14263529986885454,4.0
+6,rfr,Random forest regression,X_with_covar,BMI,0.018953832513176797,0.05038395431385006,5.0
+7,rfr,Random forest regression,X_with_covar,under-five deaths,0.013937687142790707,0.03704933081803859,6.0
+8,rfr,Random forest regression,X_with_covar,Polio,0.013779688487086363,0.03662931655786582,7.0
+15,rfr,Random forest regression,X_with_covar,thinness 5-9 years,0.013227037098965161,0.03516018086882844,8.0
+2,rfr,Random forest regression,X_with_covar,Alcohol,0.013012357063042141,0.03458948818755146,9.0
+14,rfr,Random forest regression,X_with_covar,thinness  1-19 years,0.009491182300736103,0.025229005934484204,10.0
+1,rfr,Random forest regression,X_with_covar,infant deaths,0.009225161818892203,0.024521832855229977,11.0
+202,rfr,Random forest regression,X_with_covar,Developed,0.007282509013337252,0.019357599797294643,12.0
+18,rfr,Random forest regression,X_with_covar,Year,0.006104748326475968,0.016226710604931638,13.0
+10,rfr,Random forest regression,X_with_covar,Diphtheria,0.005963040557586131,0.015850003072543674,14.0
+203,rfr,Random forest regression,X_with_covar,Developing,0.004932475996582947,0.013110411335383558,15.0
+9,rfr,Random forest regression,X_with_covar,Total expenditure,0.004352698612254482,0.011569165506056365,16.0
+12,rfr,Random forest regression,X_with_covar,GDP,0.003856539289306535,0.01025020497422904,17.0
+4,rfr,Random forest regression,X_with_covar,Hepatitis B,0.0032024830317301718,0.008511500591507175,18.0
+5,rfr,Random forest regression,X_with_covar,Measles,0.0031465886488180497,0.008362914277389548,19.0
+13,rfr,Random forest regression,X_with_covar,Population,0.0028784889925724854,0.007650214044159283,20.0
+3,rfr,Random forest regression,X_with_covar,percentage expenditure,0.0026681887675811876,0.0070911643926282394,21.0
+162,rfr,Random forest regression,X_with_covar,Sierra Leone,0.0012180452320183536,0.00323618878211739,22.0
+149,rfr,Random forest regression,X_with_covar,Republic of Korea,0.001206941874534939,0.0032066722747899046,23.0
+22,rfr,Random forest regression,X_with_covar,Angola,0.0005461902060265532,0.0014501692085499428,24.0
+152,rfr,Random forest regression,X_with_covar,Russian Federation,0.000516488254682254,0.001371211301826307,25.0
+59,rfr,Random forest regression,X_with_covar,Cuba,0.0004998983378858618,0.0013271096504641373,26.0
+75,rfr,Random forest regression,X_with_covar,Fiji,0.00045142537570710376,0.001198252001282671,27.0
+57,rfr,Random forest regression,X_with_covar,Costa Rica,0.00043327064928233843,0.0011499905527662631,28.0
+174,rfr,Random forest regression,X_with_covar,Swaziland,0.0004253312211119691,0.0011288848475670206,29.0
+90,rfr,Random forest regression,X_with_covar,Honduras,0.00038479777758449835,0.0010211331441139053,30.0
+105,rfr,Random forest regression,X_with_covar,Kiribati,0.0002590956222803904,0.0006869739860703486,31.0
+126,rfr,Random forest regression,X_with_covar,Mongolia,0.0002510932020012188,0.0006657008263832348,32.0
+103,rfr,Random forest regression,X_with_covar,Kazakhstan,0.00023280563793401512,0.0006170862501527772,33.0
+201,rfr,Random forest regression,X_with_covar,Zimbabwe,0.0002005417393969122,0.0005313178148838815,34.0
+71,rfr,Random forest regression,X_with_covar,Equatorial Guinea,0.0002000337104233339,0.0005299673007764506,35.0
+181,rfr,Random forest regression,X_with_covar,Timor-Leste,0.0001921138168276728,0.0005089135251326039,36.0
+163,rfr,Random forest regression,X_with_covar,Singapore,0.00018207089292206078,0.0004822160115659042,37.0
+35,rfr,Random forest regression,X_with_covar,Belize,0.00017802476046911781,0.00047146001290751093,38.0
+155,rfr,Random forest regression,X_with_covar,Saint Vincent and the Grenadines,0.00017548473999973608,0.00046470777306398085,39.0
+111,rfr,Random forest regression,X_with_covar,Lesotho,0.00017499322741790316,0.0004634011651532752,40.0
+40,rfr,Random forest regression,X_with_covar,Botswana,0.00016981852775566954,0.00044964505032710596,41.0
+85,rfr,Random forest regression,X_with_covar,Guatemala,0.0001553442099528748,0.00041116738191692326,42.0
+78,rfr,Random forest regression,X_with_covar,Gabon,0.0001376428849767376,0.0003641112289339355,43.0
+50,rfr,Random forest regression,X_with_covar,Central African Republic,0.0001252731670347369,0.00033122830403312315,44.0
+19,rfr,Random forest regression,X_with_covar,Afghanistan,0.00011444796007072933,0.0003024512155576816,45.0
+125,rfr,Random forest regression,X_with_covar,Micronesia (Federated States of),0.00011173084111464255,0.00029522818759548345,46.0
+70,rfr,Random forest regression,X_with_covar,El Salvador,0.00010658378809257927,0.0002815455669586517,47.0
+39,rfr,Random forest regression,X_with_covar,Bosnia and Herzegovina,0.00010247642529420152,0.00027062679717968613,48.0
+46,rfr,Random forest regression,X_with_covar,Cabo Verde,9.757643139832806e-05,0.000257600943878266,49.0
+89,rfr,Random forest regression,X_with_covar,Haiti,9.617775996145581e-05,0.000253882798643651,50.0
+187,rfr,Random forest regression,X_with_covar,Turkmenistan,9.448760165827776e-05,0.00024938978200297413,51.0
+72,rfr,Random forest regression,X_with_covar,Eritrea,9.27445680621657e-05,0.000244756204818006,52.0
+195,rfr,Random forest regression,X_with_covar,Uzbekistan,9.213463331550556e-05,0.00024313479044438298,53.0
+28,rfr,Random forest regression,X_with_covar,Azerbaijan,9.095438025059997e-05,0.00023999727566197503,54.0
+67,rfr,Random forest regression,X_with_covar,Dominican Republic,8.978890285156712e-05,0.00023689903963382253,55.0
+159,rfr,Random forest regression,X_with_covar,Senegal,8.884926242419669e-05,0.00023440115522353405,56.0
+69,rfr,Random forest regression,X_with_covar,Egypt,8.80914231225091e-05,0.00023238656014860006,57.0
+77,rfr,Random forest regression,X_with_covar,France,8.632236089054417e-05,0.00022768378998105673,58.0
+167,rfr,Random forest regression,X_with_covar,Somalia,8.412368282414675e-05,0.00022183895454686123,59.0
+38,rfr,Random forest regression,X_with_covar,Bolivia (Plurinational State of),8.394141946194332e-05,0.00022135443642934177,60.0
+135,rfr,Random forest regression,X_with_covar,Nicaragua,8.132551381193611e-05,0.00021440046792010631,61.0
+166,rfr,Random forest regression,X_with_covar,Solomon Islands,8.012516171059549e-05,0.00021120952305070923,62.0
+73,rfr,Random forest regression,X_with_covar,Estonia,7.656022503684853e-05,0.00020173270672647117,63.0
+107,rfr,Random forest regression,X_with_covar,Kyrgyzstan,7.420191788424519e-05,0.00019546352279230933,64.0
+114,rfr,Random forest regression,X_with_covar,Lithuania,7.177124952530466e-05,0.00018900197811678906,65.0
+87,rfr,Random forest regression,X_with_covar,Guinea-Bissau,7.130510380888652e-05,0.00018776280397735562,66.0
+119,rfr,Random forest regression,X_with_covar,Maldives,7.065686742293239e-05,0.0001860395707963526,67.0
+36,rfr,Random forest regression,X_with_covar,Benin,7.017551781770679e-05,0.00018475997954019914,68.0
+45,rfr,Random forest regression,X_with_covar,Burundi,6.996285701796325e-05,0.00018419465467668146,69.0
+88,rfr,Random forest regression,X_with_covar,Guyana,6.806578619594478e-05,0.00017915159406168201,70.0
+184,rfr,Random forest regression,X_with_covar,Trinidad and Tobago,6.721392856161568e-05,0.00017688706622465548,71.0
+198,rfr,Random forest regression,X_with_covar,Viet Nam,6.496205498821665e-05,0.00017090081900807363,72.0
+63,rfr,Random forest regression,X_with_covar,Democratic People's Republic of Korea,6.436680191417378e-05,0.00016931843352260769,73.0
+165,rfr,Random forest regression,X_with_covar,Slovenia,6.346677639469542e-05,0.00016692585903508995,74.0
+192,rfr,Random forest regression,X_with_covar,United Republic of Tanzania,6.269183043537452e-05,0.0001648657886355853,75.0
+82,rfr,Random forest regression,X_with_covar,Ghana,6.073744595639144e-05,0.0001596703687924616,76.0
+92,rfr,Random forest regression,X_with_covar,Iceland,5.7286085605189793e-05,0.00015049547703127977,77.0
+101,rfr,Random forest regression,X_with_covar,Japan,5.50672482549811e-05,0.00014459705135204162,78.0
+51,rfr,Random forest regression,X_with_covar,Chad,5.5013452796187104e-05,0.00014445404469337552,79.0
+109,rfr,Random forest regression,X_with_covar,Latvia,5.478643500616772e-05,0.00014385055405799013,80.0
+157,rfr,Random forest regression,X_with_covar,Sao Tome and Principe,5.409630778402792e-05,0.00014201596076135763,81.0
+196,rfr,Random forest regression,X_with_covar,Vanuatu,5.321314779232677e-05,0.00013966822059309524,82.0
+177,rfr,Random forest regression,X_with_covar,Syrian Arab Republic,5.268084567983438e-05,0.00013825318021208556,83.0
+150,rfr,Random forest regression,X_with_covar,Republic of Moldova,5.066610660333437e-05,0.00013289731728474008,84.0
+65,rfr,Random forest regression,X_with_covar,Denmark,5.052272817109852e-05,0.0001325161685599499,85.0
+182,rfr,Random forest regression,X_with_covar,Togo,4.9946145269067364e-05,0.00013098341475299314,86.0
+164,rfr,Random forest regression,X_with_covar,Slovakia,4.9441725153587293e-05,0.00012964249421999776,87.0
+47,rfr,Random forest regression,X_with_covar,Cambodia,4.859043828764215e-05,0.00012737948367980799,88.0
+175,rfr,Random forest regression,X_with_covar,Sweden,4.7743057605204054e-05,0.00012512685710629502,89.0
+44,rfr,Random forest regression,X_with_covar,Burkina Faso,4.7185927978317456e-05,0.00012364581673279346,90.0
+156,rfr,Random forest regression,X_with_covar,Samoa,4.63161666153744e-05,0.0001213336946849516,91.0
+31,rfr,Random forest regression,X_with_covar,Bangladesh,4.605416389466221e-05,0.00012063720218371727,92.0
+173,rfr,Random forest regression,X_with_covar,Suriname,4.5465069117281654e-05,0.00011907118754903494,93.0
+170,rfr,Random forest regression,X_with_covar,Spain,4.218519318411354e-05,0.00011035215979916655,94.0
+136,rfr,Random forest regression,X_with_covar,Niger,4.099582992951493e-05,0.00010719042702853023,95.0
+168,rfr,Random forest regression,X_with_covar,South Africa,4.0431861194528836e-05,0.00010569120597547892,96.0
+81,rfr,Random forest regression,X_with_covar,Germany,4.003885387916686e-05,0.00010464645862577279,97.0
+141,rfr,Random forest regression,X_with_covar,Panama,3.967454011281728e-05,0.00010367798850580918,98.0
+148,rfr,Random forest regression,X_with_covar,Qatar,3.8824009372095215e-05,0.00010141698800408938,99.0
+147,rfr,Random forest regression,X_with_covar,Portugal,3.855988687297704e-05,0.00010071486040960092,100.0
+27,rfr,Random forest regression,X_with_covar,Austria,3.789404736609615e-05,9.894483213543828e-05,101.0
+178,rfr,Random forest regression,X_with_covar,Tajikistan,3.762524302263482e-05,9.823025860348743e-05,102.0
+34,rfr,Random forest regression,X_with_covar,Belgium,3.743732618632964e-05,9.773071162555352e-05,103.0
+113,rfr,Random forest regression,X_with_covar,Libya,3.740835197566279e-05,9.765368830150639e-05,104.0
+153,rfr,Random forest regression,X_with_covar,Rwanda,3.7039238698735286e-05,9.667245944713714e-05,105.0
+131,rfr,Random forest regression,X_with_covar,Namibia,3.695680453088514e-05,9.645332134201727e-05,106.0
+60,rfr,Random forest regression,X_with_covar,Cyprus,3.580065152127132e-05,9.337987271794701e-05,107.0
+191,rfr,Random forest regression,X_with_covar,United Kingdom of Great Britain and Northern Ireland,3.578611433171752e-05,9.334122791500099e-05,108.0
+94,rfr,Random forest regression,X_with_covar,Indonesia,3.555251831396421e-05,9.272025010896473e-05,109.0
+100,rfr,Random forest regression,X_with_covar,Jamaica,3.4960965484376405e-05,9.114770113400785e-05,110.0
+84,rfr,Random forest regression,X_with_covar,Grenada,3.489653205312016e-05,9.097641511996652e-05,111.0
+62,rfr,Random forest regression,X_with_covar,Côte d'Ivoire,3.359083771128897e-05,8.750543468313158e-05,112.0
+179,rfr,Random forest regression,X_with_covar,Thailand,3.358659857211326e-05,8.749416560684281e-05,113.0
+188,rfr,Random forest regression,X_with_covar,Uganda,3.340415397368431e-05,8.700916570168509e-05,114.0
+99,rfr,Random forest regression,X_with_covar,Italy,3.323871387177888e-05,8.656936954205988e-05,115.0
+74,rfr,Random forest regression,X_with_covar,Ethiopia,3.210985674587901e-05,8.356848267715628e-05,116.0
+33,rfr,Random forest regression,X_with_covar,Belarus,3.110868787745475e-05,8.090703470657295e-05,117.0
+55,rfr,Random forest regression,X_with_covar,Comoros,3.0312757134344763e-05,7.879117960182022e-05,118.0
+128,rfr,Random forest regression,X_with_covar,Morocco,2.9252065961365043e-05,7.597150106528558e-05,119.0
+117,rfr,Random forest regression,X_with_covar,Malawi,2.8234174822658318e-05,7.32655996026786e-05,120.0
+53,rfr,Random forest regression,X_with_covar,China,2.7766818583507752e-05,7.202320748137301e-05,121.0
+98,rfr,Random forest regression,X_with_covar,Israel,2.6723320517335452e-05,6.92492340807688e-05,122.0
+108,rfr,Random forest regression,X_with_covar,Lao People's Democratic Republic,2.6628633509693915e-05,6.899752375269516e-05,123.0
+23,rfr,Random forest regression,X_with_covar,Antigua and Barbuda,2.6450207839434213e-05,6.852320752794074e-05,124.0
+56,rfr,Random forest regression,X_with_covar,Congo,2.4680296659945508e-05,6.381818056862577e-05,125.0
+96,rfr,Random forest regression,X_with_covar,Iraq,2.4552930970401746e-05,6.347959916977374e-05,126.0
+112,rfr,Random forest regression,X_with_covar,Liberia,2.416159898150577e-05,6.243930540863155e-05,127.0
+133,rfr,Random forest regression,X_with_covar,Netherlands,2.4031941479435452e-05,6.209463159121744e-05,128.0
+52,rfr,Random forest regression,X_with_covar,Chile,2.2463334350767235e-05,5.792473938731055e-05,129.0
+106,rfr,Random forest regression,X_with_covar,Kuwait,2.1090476169582537e-05,5.427521458140696e-05,130.0
+48,rfr,Random forest regression,X_with_covar,Cameroon,2.091208154439151e-05,5.380098088502275e-05,131.0
+43,rfr,Random forest regression,X_with_covar,Bulgaria,1.9380604271928303e-05,4.972979248979542e-05,132.0
+142,rfr,Random forest regression,X_with_covar,Papua New Guinea,1.8921954908646914e-05,4.851054621115731e-05,133.0
+189,rfr,Random forest regression,X_with_covar,Ukraine,1.8794722420043847e-05,4.817231890578988e-05,134.0
+151,rfr,Random forest regression,X_with_covar,Romania,1.8501077085109337e-05,4.7391709554679356e-05,135.0
+161,rfr,Random forest regression,X_with_covar,Seychelles,1.838962202028905e-05,4.709542401741124e-05,136.0
+186,rfr,Random forest regression,X_with_covar,Turkey,1.8100851376438976e-05,4.6327773256108164e-05,137.0
+176,rfr,Random forest regression,X_with_covar,Switzerland,1.769727747817852e-05,4.525493632881116e-05,138.0
+158,rfr,Random forest regression,X_with_covar,Saudi Arabia,1.763340224495351e-05,4.508513419532612e-05,139.0
+58,rfr,Random forest regression,X_with_covar,Croatia,1.7374052548794255e-05,4.439569433729215e-05,140.0
+193,rfr,Random forest regression,X_with_covar,United States of America,1.6516870078082864e-05,4.211701127088291e-05,141.0
+66,rfr,Random forest regression,X_with_covar,Djibouti,1.6331188803539094e-05,4.1623407177811546e-05,142.0
+183,rfr,Random forest regression,X_with_covar,Tonga,1.6330007329278316e-05,4.162026641667442e-05,143.0
+146,rfr,Random forest regression,X_with_covar,Poland,1.622528646183428e-05,4.1341882670508485e-05,144.0
+200,rfr,Random forest regression,X_with_covar,Zambia,1.59438487557873e-05,4.0593725356365e-05,145.0
+97,rfr,Random forest regression,X_with_covar,Ireland,1.5223010009422022e-05,3.867749036430896e-05,146.0
+24,rfr,Random forest regression,X_with_covar,Argentina,1.4388523783487674e-05,3.645914164958287e-05,147.0
+115,rfr,Random forest regression,X_with_covar,Luxembourg,1.2694790167180199e-05,3.195662060842712e-05,148.0
+129,rfr,Random forest regression,X_with_covar,Mozambique,1.2375714193823985e-05,3.110840795566319e-05,149.0
+83,rfr,Random forest regression,X_with_covar,Greece,1.1780221596043656e-05,2.9525385734492554e-05,150.0
+132,rfr,Random forest regression,X_with_covar,Nepal,1.1624394270263943e-05,2.9111143609075108e-05,151.0
+37,rfr,Random forest regression,X_with_covar,Bhutan,1.1616889342539804e-05,2.9091192954104964e-05,152.0
+104,rfr,Random forest regression,X_with_covar,Kenya,1.1601342311720066e-05,2.9049863649000903e-05,153.0
+140,rfr,Random forest regression,X_with_covar,Pakistan,1.1575073197087612e-05,2.898003139189367e-05,154.0
+143,rfr,Random forest regression,X_with_covar,Paraguay,1.0997768775088475e-05,2.7445359539025687e-05,155.0
+29,rfr,Random forest regression,X_with_covar,Bahamas,1.084319794283867e-05,2.703445760152328e-05,156.0
+120,rfr,Random forest regression,X_with_covar,Mali,1.0157716142154016e-05,2.5212213417906806e-05,157.0
+68,rfr,Random forest regression,X_with_covar,Ecuador,1.0155445098810724e-05,2.5206176210910323e-05,158.0
+49,rfr,Random forest regression,X_with_covar,Canada,1.0110003269158432e-05,2.5085376344751845e-05,159.0
+91,rfr,Random forest regression,X_with_covar,Hungary,9.614833803522396e-06,2.376904719092382e-05,160.0
+138,rfr,Random forest regression,X_with_covar,Norway,9.518284908912673e-06,2.3512387332906516e-05,161.0
+122,rfr,Random forest regression,X_with_covar,Mauritania,9.294398580413877e-06,2.2917221189194613e-05,162.0
+172,rfr,Random forest regression,X_with_covar,Sudan,9.104727433093635e-06,2.241301065485371e-05,163.0
+41,rfr,Random forest regression,X_with_covar,Brazil,9.069069164223135e-06,2.2318218826708597e-05,164.0
+116,rfr,Random forest regression,X_with_covar,Madagascar,8.779859301499223e-06,2.1549400471988175e-05,165.0
+154,rfr,Random forest regression,X_with_covar,Saint Lucia,8.26645841283793e-06,2.0184605983947566e-05,166.0
+102,rfr,Random forest regression,X_with_covar,Jordan,7.837855073575882e-06,1.904523227443582e-05,167.0
+197,rfr,Random forest regression,X_with_covar,Venezuela (Bolivarian Republic of),7.81295508103948e-06,1.8979039610347245e-05,168.0
+127,rfr,Random forest regression,X_with_covar,Montenegro,7.794271631239808e-06,1.8929372634953677e-05,169.0
+61,rfr,Random forest regression,X_with_covar,Czechia,7.404084797616784e-06,1.7892123086704363e-05,170.0
+20,rfr,Random forest regression,X_with_covar,Albania,7.386525054812633e-06,1.78454433073744e-05,171.0
+139,rfr,Random forest regression,X_with_covar,Oman,7.28933095540219e-06,1.7587068275162572e-05,172.0
+76,rfr,Random forest regression,X_with_covar,Finland,6.674937100189237e-06,1.5953800071698554e-05,173.0
+169,rfr,Random forest regression,X_with_covar,South Sudan,6.277024831473478e-06,1.4896013684762082e-05,174.0
+25,rfr,Random forest regression,X_with_covar,Armenia,6.1986478763249674e-06,1.4687661033376891e-05,175.0
+64,rfr,Random forest regression,X_with_covar,Democratic Republic of the Congo,6.1867246764489e-06,1.4655965105632988e-05,176.0
+123,rfr,Random forest regression,X_with_covar,Mauritius,6.0811153751597975e-06,1.4375219599599637e-05,177.0
+145,rfr,Random forest regression,X_with_covar,Philippines,5.96070175358043e-06,1.4055119166105942e-05,178.0
+26,rfr,Random forest regression,X_with_covar,Australia,5.779791846902259e-06,1.3574198994522055e-05,179.0
+134,rfr,Random forest regression,X_with_covar,New Zealand,5.776375964379528e-06,1.3565118414916954e-05,180.0
+32,rfr,Random forest regression,X_with_covar,Barbados,5.462646292963815e-06,1.2731118054303167e-05,181.0
+194,rfr,Random forest regression,X_with_covar,Uruguay,5.401516223361732e-06,1.2568613501060169e-05,182.0
+121,rfr,Random forest regression,X_with_covar,Malta,5.2604461237727755e-06,1.2193601110940666e-05,183.0
+171,rfr,Random forest regression,X_with_covar,Sri Lanka,5.2169460721572985e-06,1.207796315240676e-05,184.0
+180,rfr,Random forest regression,X_with_covar,The former Yugoslav republic of Macedonia,5.160740849038909e-06,1.1928550519111383e-05,185.0
+95,rfr,Random forest regression,X_with_covar,Iran (Islamic Republic of),4.98223642480088e-06,1.1454024939449502e-05,186.0
+199,rfr,Random forest regression,X_with_covar,Yemen,4.722925576333982e-06,1.0764688351817999e-05,187.0
+137,rfr,Random forest regression,X_with_covar,Nigeria,4.670251972317331e-06,1.0624663965388497e-05,188.0
+42,rfr,Random forest regression,X_with_covar,Brunei Darussalam,4.0446410116791315e-06,8.9615768738114e-06,189.0
+21,rfr,Random forest regression,X_with_covar,Algeria,3.5208865640299947e-06,7.569259098315912e-06,190.0
+80,rfr,Random forest regression,X_with_covar,Georgia,3.255805365790459e-06,6.864582954914849e-06,191.0
+185,rfr,Random forest regression,X_with_covar,Tunisia,3.1465165356170027e-06,6.574056007417601e-06,192.0
+79,rfr,Random forest regression,X_with_covar,Gambia,2.955658631275168e-06,6.0666906685613875e-06,193.0
+30,rfr,Random forest regression,X_with_covar,Bahrain,2.9089964308619335e-06,5.94264664111553e-06,194.0
+124,rfr,Random forest regression,X_with_covar,Mexico,2.3903324868057893e-06,4.563861158606882e-06,195.0
+130,rfr,Random forest regression,X_with_covar,Myanmar,2.338075769465344e-06,4.424944999004385e-06,196.0
+93,rfr,Random forest regression,X_with_covar,India,2.2221025930770472e-06,4.116648781777283e-06,197.0
+160,rfr,Random forest regression,X_with_covar,Serbia,2.206186631795404e-06,4.074338733803475e-06,198.0
+86,rfr,Random forest regression,X_with_covar,Guinea,2.0992786300353392e-06,3.7901408394250106e-06,199.0
+144,rfr,Random forest regression,X_with_covar,Peru,2.0800334515866786e-06,3.7389805978902163e-06,200.0
+110,rfr,Random forest regression,X_with_covar,Lebanon,1.921621948588615e-06,3.3178688489453876e-06,201.0
+190,rfr,Random forest regression,X_with_covar,United Arab Emirates,1.6003098751567884e-06,2.46371188029634e-06,202.0
+54,rfr,Random forest regression,X_with_covar,Colombia,7.272249508541169e-07,1.4275467395662645e-07,203.0
+118,rfr,Random forest regression,X_with_covar,Malaysia,6.735242822830519e-07,0.0,204.0

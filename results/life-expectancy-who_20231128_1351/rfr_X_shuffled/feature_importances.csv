@@ -1,0 +1,19 @@
+,model_key,model_name,training_x,feature,importance,normalized_importance,rank_importance
+0,rfr,Random forest regression,X_shuffled,Adult Mortality,0.06621411659530914,0.9999999999999999,1.0
+9,rfr,Random forest regression,X_shuffled,Total expenditure,0.06570786218293738,0.9861721801097904,2.0
+6,rfr,Random forest regression,X_shuffled,BMI,0.06449263115176106,0.9529793912403078,3.0
+12,rfr,Random forest regression,X_shuffled,GDP,0.06430752171201605,0.9479233168037814,4.0
+2,rfr,Random forest regression,X_shuffled,Alcohol,0.06427478376492221,0.9470291133658936,5.0
+16,rfr,Random forest regression,X_shuffled,Income composition of resources,0.06352880389744109,0.9266534386119193,6.0
+17,rfr,Random forest regression,X_shuffled,Schooling,0.061290389821418795,0.865513454590967,7.0
+13,rfr,Random forest regression,X_shuffled,Population,0.06101643293297007,0.8580306032447366,8.0
+3,rfr,Random forest regression,X_shuffled,percentage expenditure,0.05989010715333929,0.8272661701102807,9.0
+5,rfr,Random forest regression,X_shuffled,Measles,0.05457453944399867,0.6820768915524474,10.0
+15,rfr,Random forest regression,X_shuffled,thinness 5-9 years,0.05411118673935709,0.6694208877945577,11.0
+14,rfr,Random forest regression,X_shuffled,thinness  1-19 years,0.054065165288163346,0.6681638590701823,12.0
+8,rfr,Random forest regression,X_shuffled,Polio,0.05180669762181024,0.6064761318030084,13.0
+10,rfr,Random forest regression,X_shuffled,Diphtheria,0.05165393602226777,0.602303605434858,14.0
+4,rfr,Random forest regression,X_shuffled,Hepatitis B,0.04931730582551457,0.5384809488394203,15.0
+7,rfr,Random forest regression,X_shuffled,under-five deaths,0.04365899762450752,0.3839300653809171,16.0
+1,rfr,Random forest regression,X_shuffled,infant deaths,0.04048670201288972,0.2972820653161975,17.0
+11,rfr,Random forest regression,X_shuffled,HIV/AIDS,0.02960282020937612,0.0,18.0

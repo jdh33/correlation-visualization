@@ -1,0 +1,205 @@
+,model_key,model_name,training_x,feature,coefficient,normalized_importance,rank_importance
+11,rr,Ridge regression,X_with_covar,HIV/AIDS,-1.6030137264086817,0.9999999999999999,1.0
+162,rr,Ridge regression,X_with_covar,Sierra Leone,-1.5656817242599215,0.9765984725311561,2.0
+203,rr,Ridge regression,X_with_covar,Developing,-1.3700651596449311,0.8539764285283378,3.5
+202,rr,Ridge regression,X_with_covar,Developed,1.3700651596449311,0.8539764285283378,3.5
+22,rr,Ridge regression,X_with_covar,Angola,-1.3257531448623474,0.8261994872594943,5.0
+62,rr,Ridge regression,X_with_covar,Côte d'Ivoire,-1.2096748141212663,0.753435904032679,6.0
+51,rr,Ridge regression,X_with_covar,Chad,-1.1967012950806564,0.7453034668548759,7.0
+18,rr,Ridge regression,X_with_covar,Year,1.1935967685925324,0.7433573975923679,8.0
+50,rr,Ridge regression,X_with_covar,Central African Republic,-1.1557188268264782,0.7196136484312737,9.0
+167,rr,Ridge regression,X_with_covar,Somalia,-1.0461136431946367,0.6509077508673682,10.0
+83,rr,Ridge regression,X_with_covar,Greece,0.9750400330040462,0.6063553308134589,11.0
+120,rr,Ridge regression,X_with_covar,Mali,-0.9246951704686522,0.5747967050841845,12.0
+117,rr,Ridge regression,X_with_covar,Malawi,-0.9181645068959665,0.5707029652848296,13.0
+111,rr,Ridge regression,X_with_covar,Lesotho,-0.9171752402642742,0.5700828445057909,14.0
+77,rr,Ridge regression,X_with_covar,France,0.8955911605074566,0.5565528861256814,15.0
+169,rr,Ridge regression,X_with_covar,South Sudan,-0.890305366190136,0.5532394913493034,16.0
+149,rr,Ridge regression,X_with_covar,Republic of Korea,0.881850911357324,0.5479398249607778,17.0
+49,rr,Ridge regression,X_with_covar,Canada,0.8626545275672044,0.5359065913619773,18.0
+45,rr,Ridge regression,X_with_covar,Burundi,-0.8436307488285557,0.5239815550636366,19.0
+98,rr,Ridge regression,X_with_covar,Israel,0.8194193330410271,0.5088046537725209,20.0
+44,rr,Ridge regression,X_with_covar,Burkina Faso,-0.8130570229207913,0.504816446163116,21.0
+182,rr,Ridge regression,X_with_covar,Togo,-0.8106883054909181,0.5033316180582579,22.0
+52,rr,Ridge regression,X_with_covar,Chile,0.7824162479151862,0.4856093076040033,23.0
+137,rr,Ridge regression,X_with_covar,Nigeria,-0.7739565905082543,0.48030637998719716,24.0
+71,rr,Ridge regression,X_with_covar,Equatorial Guinea,-0.77260489695303,0.47945907226081286,25.0
+86,rr,Ridge regression,X_with_covar,Guinea,-0.758860541390009,0.47084343699517855,26.0
+87,rr,Ridge regression,X_with_covar,Guinea-Bissau,-0.7562123765115261,0.4691834375421917,27.0
+192,rr,Ridge regression,X_with_covar,United Republic of Tanzania,-0.7554254841723699,0.46869017488201054,28.0
+64,rr,Ridge regression,X_with_covar,Democratic Republic of the Congo,-0.7549015563280922,0.46836175124722396,29.0
+36,rr,Ridge regression,X_with_covar,Benin,-0.7522851243152403,0.46672164350869083,30.0
+48,rr,Ridge regression,X_with_covar,Cameroon,-0.7416728341806312,0.46006934026219476,31.0
+112,rr,Ridge regression,X_with_covar,Liberia,-0.7293051201843327,0.4523166513585058,32.0
+76,rr,Ridge regression,X_with_covar,Finland,0.7129635525814424,0.44207295637479843,33.0
+57,rr,Ridge regression,X_with_covar,Costa Rica,0.709782419545509,0.4400788663759337,34.0
+200,rr,Ridge regression,X_with_covar,Zambia,-0.7059276746298124,0.43766252345731377,35.0
+136,rr,Ridge regression,X_with_covar,Niger,-0.6994837139477043,0.43362313327648166,36.0
+129,rr,Ridge regression,X_with_covar,Mozambique,-0.696561226380701,0.431791174926001,37.0
+188,rr,Ridge regression,X_with_covar,Uganda,-0.6817873787874842,0.4225302036313056,38.0
+201,rr,Ridge regression,X_with_covar,Zimbabwe,-0.6676648592139228,0.4136775166413859,39.0
+19,rr,Ridge regression,X_with_covar,Afghanistan,-0.6503593099221063,0.40282955071922266,40.0
+79,rr,Ridge regression,X_with_covar,Gambia,-0.6327384252637621,0.3917839171441891,41.0
+59,rr,Ridge regression,X_with_covar,Cuba,0.624232648980631,0.3864520799568781,42.0
+148,rr,Ridge regression,X_with_covar,Qatar,0.6130434590602906,0.3794381476681258,43.0
+89,rr,Ridge regression,X_with_covar,Haiti,-0.5598965280953457,0.34612304820185696,44.0
+141,rr,Ridge regression,X_with_covar,Panama,0.5573269314954775,0.3445122991941812,45.0
+39,rr,Ridge regression,X_with_covar,Bosnia and Herzegovina,0.5481997632624199,0.3387909430968697,46.0
+104,rr,Ridge regression,X_with_covar,Kenya,-0.5459603855651081,0.33738719147144286,47.0
+153,rr,Ridge regression,X_with_covar,Rwanda,-0.5438931753923111,0.3360913628831498,48.0
+82,rr,Ridge regression,X_with_covar,Ghana,-0.5386554761258566,0.33280811644035085,49.0
+194,rr,Ridge regression,X_with_covar,Uruguay,0.5321425830064491,0.3287255160315078,50.0
+17,rr,Ridge regression,X_with_covar,Schooling,0.5294120963331339,0.32701391324539736,51.0
+42,rr,Ridge regression,X_with_covar,Brunei Darussalam,0.5293534397040579,0.32697714439729,52.0
+40,rr,Ridge regression,X_with_covar,Botswana,-0.5262007664330726,0.3250008943730543,53.0
+7,rr,Ridge regression,X_with_covar,under-five deaths,-0.5245976624298959,0.3239959902638061,54.0
+190,rr,Ridge regression,X_with_covar,United Arab Emirates,0.5159952142202573,0.31860355437796783,55.0
+124,rr,Ridge regression,X_with_covar,Mexico,0.5057721785387432,0.3121952548883604,56.0
+23,rr,Ridge regression,X_with_covar,Antigua and Barbuda,0.504371381145459,0.3113171664711734,57.0
+55,rr,Ridge regression,X_with_covar,Comoros,-0.5011455749401529,0.30929507314165333,58.0
+72,rr,Ridge regression,X_with_covar,Eritrea,-0.49644322050665696,0.30634740706135044,59.0
+101,rr,Ridge regression,X_with_covar,Japan,0.47506751592743524,0.2929480684487772,60.0
+142,rr,Ridge regression,X_with_covar,Papua New Guinea,-0.47270142145757377,0.29146488454372693,61.0
+119,rr,Ridge regression,X_with_covar,Maldives,0.4703518030847631,0.2899920286633076,62.0
+74,rr,Ridge regression,X_with_covar,Ethiopia,-0.4697963778953266,0.289643860949835,63.0
+30,rr,Ridge regression,X_with_covar,Bahrain,0.4695945246648626,0.28951732945820613,64.0
+174,rr,Ridge regression,X_with_covar,Swaziland,-0.46616777715020147,0.28736927627387404,65.0
+56,rr,Ridge regression,X_with_covar,Congo,-0.46079842448639896,0.28400350303323213,66.0
+29,rr,Ridge regression,X_with_covar,Bahamas,0.46003466099886337,0.2835247386700982,67.0
+92,rr,Ridge regression,X_with_covar,Iceland,0.4596049442653519,0.28325537117400146,68.0
+99,rr,Ridge regression,X_with_covar,Italy,0.45759288665626446,0.2819941149140149,69.0
+24,rr,Ridge regression,X_with_covar,Argentina,0.4510685690967427,0.27790435310653894,70.0
+73,rr,Ridge regression,X_with_covar,Estonia,0.4494518612408693,0.2768909214361035,71.0
+66,rr,Ridge regression,X_with_covar,Djibouti,-0.44532416913174483,0.27430348184768555,72.0
+176,rr,Ridge regression,X_with_covar,Switzerland,0.4376579273548106,0.2694979060092709,73.0
+53,rr,Ridge regression,X_with_covar,China,0.43719571458771217,0.26920816840766565,74.0
+139,rr,Ridge regression,X_with_covar,Oman,0.43718905770013594,0.26920399554447844,75.0
+175,rr,Ridge regression,X_with_covar,Sweden,0.43711858561508393,0.2691598201898441,76.0
+100,rr,Ridge regression,X_with_covar,Jamaica,0.43543758822120193,0.26810608868808233,77.0
+198,rr,Ridge regression,X_with_covar,Viet Nam,0.4343328586204987,0.2674135900646899,78.0
+20,rr,Ridge regression,X_with_covar,Albania,0.4323041927197906,0.2661419229140411,79.0
+68,rr,Ridge regression,X_with_covar,Ecuador,0.42788599299150043,0.26337237892086274,80.0
+108,rr,Ridge regression,X_with_covar,Lao People's Democratic Republic,-0.4258642483220904,0.2621050503369936,81.0
+170,rr,Ridge regression,X_with_covar,Spain,0.4245418759355574,0.26127612255529625,82.0
+32,rr,Ridge regression,X_with_covar,Barbados,0.4161496979003871,0.2560154943138509,83.0
+159,rr,Ridge regression,X_with_covar,Senegal,-0.4107615304819406,0.2526379270634511,84.0
+191,rr,Ridge regression,X_with_covar,United Kingdom of Great Britain and Northern Ireland,0.4047581839327795,0.24887473540243685,85.0
+127,rr,Ridge regression,X_with_covar,Montenegro,0.39965038346311205,0.245672915887909,86.0
+27,rr,Ridge regression,X_with_covar,Austria,0.396433254736577,0.2436562620271056,87.0
+186,rr,Ridge regression,X_with_covar,Turkey,0.3945090966469394,0.24245010549122992,88.0
+110,rr,Ridge regression,X_with_covar,Lebanon,0.3936440211514192,0.2419078337992277,89.0
+154,rr,Ridge regression,X_with_covar,Saint Lucia,0.38668810260852554,0.23754752335555188,90.0
+135,rr,Ridge regression,X_with_covar,Nicaragua,0.38628346578665745,0.23729387717648762,91.0
+172,rr,Ridge regression,X_with_covar,Sudan,-0.3832748274660625,0.23540791531399058,92.0
+160,rr,Ridge regression,X_with_covar,Serbia,0.38269685369275663,0.23504561304371874,93.0
+143,rr,Ridge regression,X_with_covar,Paraguay,0.3793073363371494,0.2329208975466154,94.0
+156,rr,Ridge regression,X_with_covar,Samoa,0.37719880888153,0.23159916926172813,95.0
+163,rr,Ridge regression,X_with_covar,Singapore,0.37465297296083716,0.23000331461155793,96.0
+144,rr,Ridge regression,X_with_covar,Peru,0.3734355005578717,0.22924014327756342,97.0
+185,rr,Ridge regression,X_with_covar,Tunisia,0.37332789322303905,0.2291726897294815,98.0
+180,rr,Ridge regression,X_with_covar,The former Yugoslav republic of Macedonia,0.36300917465852994,0.2227044115222638,99.0
+116,rr,Ridge regression,X_with_covar,Madagascar,-0.3594946478098585,0.22050133395194108,100.0
+26,rr,Ridge regression,X_with_covar,Australia,0.3561417304241792,0.21839956110865558,101.0
+54,rr,Ridge regression,X_with_covar,Colombia,0.35466319572614485,0.21747274314127693,102.0
+95,rr,Ridge regression,X_with_covar,Iran (Islamic Republic of),0.353860750498053,0.21696973116853016,103.0
+41,rr,Ridge regression,X_with_covar,Brazil,0.3531354121553227,0.21651505356822437,104.0
+138,rr,Ridge regression,X_with_covar,Norway,0.35026336358400717,0.21471471285074356,105.0
+90,rr,Ridge regression,X_with_covar,Honduras,0.35001687857140423,0.2145602039720046,106.0
+106,rr,Ridge regression,X_with_covar,Kuwait,0.3482158838631875,0.2134312522761477,107.0
+115,rr,Ridge regression,X_with_covar,Luxembourg,0.3462102551218403,0.21217402594534673,108.0
+133,rr,Ridge regression,X_with_covar,Netherlands,0.3461166286779115,0.21211533630446758,109.0
+118,rr,Ridge regression,X_with_covar,Malaysia,0.3447482128411021,0.2112575462329281,110.0
+21,rr,Ridge regression,X_with_covar,Algeria,0.3415136902697195,0.20922998905822357,111.0
+155,rr,Ridge regression,X_with_covar,Saint Vincent and the Grenadines,0.3407083032368345,0.2087251330181428,112.0
+25,rr,Ridge regression,X_with_covar,Armenia,0.3386704487996176,0.20744770604275567,113.0
+80,rr,Ridge regression,X_with_covar,Georgia,0.3307675526681768,0.20249378366360266,114.0
+122,rr,Ridge regression,X_with_covar,Mauritania,-0.32957055743200436,0.20174344842072592,115.0
+81,rr,Ridge regression,X_with_covar,Germany,0.32380216955953883,0.19812754036654373,116.0
+158,rr,Ridge regression,X_with_covar,Saudi Arabia,0.323303287340013,0.19781481655608668,117.0
+121,rr,Ridge regression,X_with_covar,Malta,0.3216557400321972,0.19678205320665695,118.0
+181,rr,Ridge regression,X_with_covar,Timor-Leste,-0.32090963250544374,0.19631435646453052,119.0
+168,rr,Ridge regression,X_with_covar,South Africa,-0.3200843313055042,0.19579701724914378,120.0
+199,rr,Ridge regression,X_with_covar,Yemen,-0.3200502953532791,0.19577568184720767,121.0
+197,rr,Ridge regression,X_with_covar,Venezuela (Bolivarian Republic of),0.3173287359314303,0.1940696750995733,122.0
+134,rr,Ridge regression,X_with_covar,New Zealand,0.3144786031208107,0.19228307225433097,123.0
+34,rr,Ridge regression,X_with_covar,Belgium,0.3124113055285967,0.19098718886726548,124.0
+171,rr,Ridge regression,X_with_covar,Sri Lanka,0.30634185405579106,0.18718255940229067,125.0
+130,rr,Ridge regression,X_with_covar,Myanmar,-0.30009216860811566,0.18326495045400482,126.0
+97,rr,Ridge regression,X_with_covar,Ireland,0.3000707084907509,0.18325149820132372,127.0
+84,rr,Ridge regression,X_with_covar,Grenada,0.292719785088111,0.17864357936421524,128.0
+147,rr,Ridge regression,X_with_covar,Portugal,0.2886049627773843,0.17606420719579594,129.0
+102,rr,Ridge regression,X_with_covar,Jordan,0.28276828333125686,0.17240549063832022,130.0
+47,rr,Ridge regression,X_with_covar,Cambodia,-0.2812512183526549,0.17145452000386807,131.0
+179,rr,Ridge regression,X_with_covar,Thailand,0.27969484689957685,0.17047891014598265,132.0
+67,rr,Ridge regression,X_with_covar,Dominican Republic,0.27895858694306847,0.17001738634321997,133.0
+105,rr,Ridge regression,X_with_covar,Kiribati,-0.27368534299283054,0.16671185875164646,134.0
+183,rr,Ridge regression,X_with_covar,Tonga,0.27206645270410745,0.16569705902540527,135.0
+161,rr,Ridge regression,X_with_covar,Seychelles,0.26945219006382404,0.16405831115585398,136.0
+85,rr,Ridge regression,X_with_covar,Guatemala,0.2655090612021128,0.16158656485082515,137.0
+187,rr,Ridge regression,X_with_covar,Turkmenistan,-0.26403383573905104,0.16066182127401368,138.0
+3,rr,Ridge regression,X_with_covar,percentage expenditure,0.2626230156188478,0.15977745012068056,139.0
+78,rr,Ridge regression,X_with_covar,Gabon,-0.2597891826464017,0.15800106481237167,140.0
+46,rr,Ridge regression,X_with_covar,Cabo Verde,0.25839737459394274,0.157128611354312,141.0
+123,rr,Ridge regression,X_with_covar,Mauritius,0.2540510136670424,0.1544040994405103,142.0
+0,rr,Ridge regression,X_with_covar,Adult Mortality,-0.2532537791092597,0.15390435377113204,143.0
+12,rr,Ridge regression,X_with_covar,GDP,-0.250851799647247,0.15239867539535396,144.0
+165,rr,Ridge regression,X_with_covar,Slovenia,0.2504494907265485,0.15214648845876338,145.0
+131,rr,Ridge regression,X_with_covar,Namibia,-0.24957495742118235,0.15159828814830606,146.0
+128,rr,Ridge regression,X_with_covar,Morocco,0.2380961508636916,0.14440280996596092,147.0
+2,rr,Ridge regression,X_with_covar,Alcohol,-0.2377459911827033,0.14418331272709126,148.0
+60,rr,Ridge regression,X_with_covar,Cyprus,0.23773990109296006,0.1441794951605475,149.0
+70,rr,Ridge regression,X_with_covar,El Salvador,0.2346911336713307,0.14226837841199816,150.0
+114,rr,Ridge regression,X_with_covar,Lithuania,-0.2231506936855674,0.13503426537800559,151.0
+126,rr,Ridge regression,X_with_covar,Mongolia,-0.22168735877609436,0.13411697538258302,152.0
+93,rr,Ridge regression,X_with_covar,India,0.21232286216319401,0.1282468502324386,153.0
+69,rr,Ridge regression,X_with_covar,Egypt,0.2114486425914518,0.1276988465855834,154.0
+196,rr,Ridge regression,X_with_covar,Vanuatu,0.20956689273301568,0.12651927360618057,155.0
+43,rr,Ridge regression,X_with_covar,Bulgaria,-0.2079194465567322,0.12548657365094873,156.0
+109,rr,Ridge regression,X_with_covar,Latvia,-0.20192123205534948,0.12172659900884969,157.0
+157,rr,Ridge regression,X_with_covar,Sao Tome and Principe,-0.20169140980210082,0.12158253516381615,158.0
+65,rr,Ridge regression,X_with_covar,Denmark,0.19896862861767817,0.11987576255555854,159.0
+113,rr,Ridge regression,X_with_covar,Libya,0.19833943437335624,0.11948135278527444,160.0
+10,rr,Ridge regression,X_with_covar,Diphtheria,0.1949094284787315,0.1173312570887857,161.0
+184,rr,Ridge regression,X_with_covar,Trinidad and Tobago,0.19152310330216926,0.11520854260586075,162.0
+140,rr,Ridge regression,X_with_covar,Pakistan,-0.17887584468441228,0.10728062144134207,163.0
+193,rr,Ridge regression,X_with_covar,United States of America,0.16723162836501523,0.09998145631846156,164.0
+37,rr,Ridge regression,X_with_covar,Bhutan,-0.1668089654402041,0.09971651049515382,165.0
+151,rr,Ridge regression,X_with_covar,Romania,-0.16394864477387208,0.0979235214029496,166.0
+150,rr,Ridge regression,X_with_covar,Republic of Moldova,0.16239272821601308,0.09694819669566826,167.0
+91,rr,Ridge regression,X_with_covar,Hungary,-0.1567455868787022,0.09340829190837804,168.0
+28,rr,Ridge regression,X_with_covar,Azerbaijan,0.15546922672369967,0.09260820684708376,169.0
+88,rr,Ridge regression,X_with_covar,Guyana,-0.15310176761032115,0.09112416751663674,170.0
+178,rr,Ridge regression,X_with_covar,Tajikistan,-0.15277581883196792,0.0909198468573891,171.0
+173,rr,Ridge regression,X_with_covar,Suriname,0.15247950027947993,0.09073409987500267,172.0
+132,rr,Ridge regression,X_with_covar,Nepal,-0.15120255387750675,0.0899336473253928,173.0
+103,rr,Ridge regression,X_with_covar,Kazakhstan,-0.14998745966489505,0.08917196675759581,174.0
+4,rr,Ridge regression,X_with_covar,Hepatitis B,-0.1497052007911081,0.08899503307046244,175.0
+5,rr,Ridge regression,X_with_covar,Measles,-0.14257804229716486,0.08452738103813351,176.0
+177,rr,Ridge regression,X_with_covar,Syrian Arab Republic,0.13758124375353079,0.0813951429677193,177.0
+189,rr,Ridge regression,X_with_covar,Ukraine,0.1359656264556708,0.08038239491246221,178.0
+33,rr,Ridge regression,X_with_covar,Belarus,0.1186650550857498,0.06953754939556173,179.0
+8,rr,Ridge regression,X_with_covar,Polio,0.11638156059791262,0.06810614320499261,180.0
+38,rr,Ridge regression,X_with_covar,Bolivia (Plurinational State of),-0.10795070735814102,0.06282127145099109,181.0
+15,rr,Ridge regression,X_with_covar,thinness 5-9 years,0.09785492507089955,0.05649274062178681,182.0
+164,rr,Ridge regression,X_with_covar,Slovakia,-0.09548193428402431,0.05500523376745061,183.0
+61,rr,Ridge regression,X_with_covar,Czechia,0.0856536075442205,0.04884435717535681,184.0
+9,rr,Ridge regression,X_with_covar,Total expenditure,-0.07310298523989187,0.040977012385343035,185.0
+145,rr,Ridge regression,X_with_covar,Philippines,-0.06586962013272088,0.0364427848458415,186.0
+6,rr,Ridge regression,X_with_covar,BMI,-0.05896106847697177,0.03211216628705871,187.0
+35,rr,Ridge regression,X_with_covar,Belize,0.05421625482859563,0.02913788469121595,188.0
+14,rr,Ridge regression,X_with_covar,thinness  1-19 years,-0.05411195536063568,0.029072504676109216,189.0
+75,rr,Ridge regression,X_with_covar,Fiji,-0.04580812729019823,0.023867258519940957,190.0
+166,rr,Ridge regression,X_with_covar,Solomon Islands,-0.04450852612757723,0.023052604856726517,191.0
+96,rr,Ridge regression,X_with_covar,Iraq,0.04360479443519825,0.022486101567152108,192.0
+195,rr,Ridge regression,X_with_covar,Uzbekistan,-0.042880800019438156,0.022032266406096807,193.0
+152,rr,Ridge regression,X_with_covar,Russian Federation,-0.04223375002716008,0.021626663778419,194.0
+1,rr,Ridge regression,X_with_covar,infant deaths,0.03999897641711501,0.020225798220399258,195.0
+16,rr,Ridge regression,X_with_covar,Income composition of resources,-0.03487348990619377,0.01701289222895096,196.0
+31,rr,Ridge regression,X_with_covar,Bangladesh,0.03298490983712782,0.015829037738981533,197.0
+146,rr,Ridge regression,X_with_covar,Poland,-0.0322741876777051,0.015383522278273807,198.0
+63,rr,Ridge regression,X_with_covar,Democratic People's Republic of Korea,0.03207719686396189,0.015260038787606678,199.0
+94,rr,Ridge regression,X_with_covar,Indonesia,-0.03173691800637209,0.015046735332806063,200.0
+58,rr,Ridge regression,X_with_covar,Croatia,0.024779962955511197,0.010685775155168217,201.0
+13,rr,Ridge regression,X_with_covar,Population,-0.012078035219752632,0.0027235847097919546,202.0
+125,rr,Ridge regression,X_with_covar,Micronesia (Federated States of),-0.011672955808547773,0.002469661094053375,203.0
+107,rr,Ridge regression,X_with_covar,Kyrgyzstan,-0.007733153443396232,0.0,204.0

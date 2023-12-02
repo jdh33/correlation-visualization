@@ -1,0 +1,7 @@
+,model_key,model_name,training_x,r2_score,shuffled_r2_score,best_hyperparameters
+0,rr,Ridge regression,X,0.8151941920221311,-0.9490601931386797,"{'imputer__strategy': 'mean', 'regressor__alpha': 0.0001}"
+1,rr,Ridge regression,X_with_covar,0.9560953007414683,,"{'imputer__strategy': 'median', 'regressor__alpha': 0.0001}"
+2,rr,Ridge regression,X_shuffled,-0.0009134665477115167,,"{'imputer__strategy': 'constant', 'regressor__alpha': 100.0}"
+3,rfr,Random forest regression,X,0.9644712411601883,-1.0318989130136083,"{'imputer__strategy': 'constant', 'regressor__max_features': 0.66}"
+4,rfr,Random forest regression,X_with_covar,0.9668494637361713,,"{'imputer__strategy': 'constant', 'regressor__max_features': 0.5}"
+5,rfr,Random forest regression,X_shuffled,-0.058850446676856905,,"{'imputer__strategy': 'median', 'regressor__max_features': 0.1}"
